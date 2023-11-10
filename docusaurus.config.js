@@ -6,6 +6,7 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Islas Cloud',
@@ -40,6 +41,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -77,12 +79,16 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Docs',
+            
+            
+           
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
-            position: 'right',
+            position: 'right',                          
+            
           },
         ],
       },
@@ -94,7 +100,8 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/intro',          
+               
               },
             ],
           },
@@ -125,6 +132,7 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
+
               },
             ],
           },

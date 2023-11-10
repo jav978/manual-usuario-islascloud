@@ -34,8 +34,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Manual usuario ${siteConfig.title}`}
+      description="Manual de usuario del sistema Islas Cloud <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
