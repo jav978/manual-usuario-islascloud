@@ -10,7 +10,7 @@ const  miniscula =(arg) => {
 const FeatureList = [
   {
     title: 'Admin',
-    Svg: require('@site/static/img/undraw_engineering_team_a7n2.svg').default,
+    Svg: require('@site/static/img/undraw_qa_engineers_dg-5-p.svg').default,
     description: (
       <>
         Usuario Administrador  
@@ -28,7 +28,7 @@ const FeatureList = [
   },
   {
     title: 'Client User',
-    Svg: require('@site/static/img/undraw_engineering_team_a7n2.svg').default,
+    Svg: require('@site/static/img/undraw_heatmap_uyye.svg').default,
     description: (
       <>
         Usuario Client User.
@@ -89,7 +89,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <h1 className="hero__title" style={{textAlign: 'center', margin: '10px'}}>Usuarios</h1>
+        {/* <h1 className="hero__title" style={{textAlign: 'center', margin: '10px'}}>Usuarios</h1> */}
 
         <div className="row">
           {FeatureList.map((props, idx) => (

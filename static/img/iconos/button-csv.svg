@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="47.355232mm"
+   height="11.670602mm"
+   viewBox="0 0 47.355232 11.670602"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><g
+     id="layer1"
+     transform="translate(-84.209368,-8.6650636)"><rect
+       style="fill:#6366f1;fill-opacity:1;stroke-width:0.810331;stroke-linecap:square;paint-order:fill markers stroke"
+       id="rect33"
+       width="47.355228"
+       height="11.670601"
+       x="84.209373"
+       y="8.6650639"
+       ry="1.2334986" /><g
+       id="g33"
+       transform="matrix(1.0594629,0,0,1.0594629,-33.017093,-89.400899)"><text
+         xml:space="preserve"
+         style="font-size:5.02842px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#6c757d;fill-opacity:1;stroke-width:0.628356;stroke-linecap:square;paint-order:fill markers stroke"
+         x="116.96645"
+         y="99.44471"
+         id="text33"><tspan
+           id="tspan33"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#ffffff;stroke-width:0.628356"
+           x="116.96645"
+           y="99.44471">Exportar CSV</tspan></text></g></g></svg>
