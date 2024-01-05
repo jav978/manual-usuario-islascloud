@@ -3,7 +3,7 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 
-const  miniscula =(arg) => {
+const  minuscula =(arg) => {
   return arg.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '');
 } 
 
@@ -50,7 +50,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_add_information_j2wg.svg').default,
     description: (
       <>
-        Usuario Information Tecnology.
+        Usuario Information technology.
       </>
     ),
   },
@@ -71,15 +71,15 @@ function Feature({Svg, title, description}) {
           <p>{description}</p>          
 
         </div>     
-        <div className="card__footer">
+        {/* <div className="card__footer">
           <div className={styles.buttons}>
             <Link
               className="button button--block button--primary button--lg "
-              to={`/docs/usuarios/${'user_' + miniscula(title)}`}>
+              to={`/docs/usuarios/${'user_' + minuscula(title)}`}>
               Acceder
             </Link>
           </div>
-        </div> 
+        </div>  */}
       </div>
     </div>
   );
@@ -89,7 +89,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        {/* <h1 className="hero__title" style={{textAlign: 'center', margin: '10px'}}>Usuarios</h1> */}
+        <h1 className="hero__title" style={{textAlign: 'center', margin: '10px'}}>Usuarios del </h1>
 
         <div className="row">
           {FeatureList.map((props, idx) => (

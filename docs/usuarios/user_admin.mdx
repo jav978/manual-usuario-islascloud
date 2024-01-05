@@ -4,49 +4,71 @@ sidebar_position: 1
 
 import Highlight from '@site/src/components/Highlight/Highlight';
 import 'primeicons/primeicons.css';
+import Tabs from '@theme/Tabs';
+
+import TabItem from '@theme/TabItem';
 
 
-# Admin 
-<Highlight color="#666">Módulo del usuario Admin </Highlight>
+# Usuarios 
+
+<Highlight color="#666">Usuarios del Sistema</Highlight>
 
 
-## Usuario Administrador
-> Bienvenidos a la página del usuario administrador.
+## Bienvenidos al Sistema
+
+> Bienvenidos al sistema de Reportería  de Isla cloud.
+
+ :::info[INFO]
+   `La navegación por el menú de los diferentes módulos del sistema y las pantallas (Interfaz), es igual para todos los usuarios` **Solo el usuario Admin y IT tienen acceso a los módulos usuario y configuración**; esto con respecto a la interfaz del usuario.
+ :::
+
+:::tip[Usuario del Sistema]
+
+
+<Tabs>
+  <TabItem value="admin" label="Admin">El usuario **Admin** tiene acceso total y control absoluto sobre el sistema.Capacidad para gestionar usuarios, configuraciones</TabItem>
+  <TabItem value="clientmanager" label="Client Manager">El usuario **Client Manager** tiene priviliegios limitados. </TabItem>
+  <TabItem value="clientuser" label="Client User">El usuario **Client User** tiene priviliegios limitados.</TabItem>
+  <TabItem value="corporatemanager" label="Corporate Manager">Este usuario  tiene El usuario **Corporate Manager** tiene priviliegios limitados.</TabItem>
+  <TabItem value="userit" label="Information technology">El usuario **It** tiene acceso total y control absoluto sobre el sistema.Capacidad para gestionar usuarios, configuraciones.</TabItem>
+</Tabs>
+ :::
+
 
 ### Dashboard Principal - Mapa ![Dashboard](../../static/img/iconos/globe.svg "Dasboard Principal")
-![Dashboard](/img/dashboard/admin-dashboard/admin-dashboard.png "Dasboard Principal")
+![Dashboard](/img/dashboard/admin-user/admin-dashboard/admin-dashboard.png "Dasboard Principal")
 > **Interfaz del Dasboard Principal**, esta compuesta con los siguientes elementos, menú de navegación hacia los diferentes módulos, dos listas desplegables, la primera **Grupos de módulos** que permite seleccionar el grupo de módulos de comunicaciones, el segundo **Módulos de cominicación** que permite seleccionar el **módulo de comunicaciones - Sensores**.
 
 
-![dashboard](/img/dashboard/admin-dashboard/admin-dashboard-1.png "Dashboar Principal")
-> Lista desplegable para seleccionar El grupo de módulos  
+![dashboard](/img/dashboard/admin-user/admin-dashboard/admin-dashboard-1.png "Dashboar Principal")
+> **Lista desplegable para seleccionar El grupo de módulos**  
 ---
 
-![dashboard](../../static/img/dashboard/admin-dashboard/admin-dashboard-2.png "Dashboard Principal")
-> Lista desplegable para seleccionar el módulo de comunicación   
+![dashboard](../../static/img/dashboard/admin-user/admin-dashboard/admin-dashboard-2.png "Dashboard Principal")
+> **Lista desplegable para seleccionar el módulo de comunicación**   
 
 ---
 
-![dashboard](/img/dashboard/admin-dashboard/admin-dashboard-3.png "Dashboard Principal")
+![dashboard](/img/dashboard/admin-user/admin-dashboard/admin-dashboard-3.png "Dashboard Principal")
 :::info
 Al momento de seleccionar  con un clic el ícono de **gps**, redireciona a la vista **Tiempo Real Tablas**, interfaz que muestra  el listado de los sensores de manera detallada.
 :::  
 
 ---
 ### Cambio de idioma 
-> Para cambiar el idioma del sistema, seleccione el lista desplegable (dropdown) de **idioma** y seleccione el idioma que desea utilizar.
+> Para cambiar el idioma del sistema, seleccione la lista desplegable (dropdown) de **idioma** y seleccione el idioma que desea utilizar.
 
-![dashboard](/img/dashboard/admin-dashboard/admin-dashboard-4.png "Dashboard Principal")
+![dashboard](/img/dashboard/admin-user/admin-dashboard/admin-dashboard-4.png "Dashboard Principal")
+
 :::info
-Al momento de seleccionar  con un clic la lista desplegable se  cambia el idioma de la interfaz del istema. **Solo se puede cambiar al idioma inglés o español**.
+Al momento de seleccionar  con un clic la lista desplegable se  cambia el idioma de la interfaz del sistema. **Solo se puede cambiar al idioma inglés o español**.
 ::: 
-
 
 ---
 ### Menú de navegación
 > Menú de navegación del sistema.
 
-![Login](../../static/img/dashboard/menu/menu-principal.png "Login Error")
+![Login](../../static/img/dashboard/admin-user/menu/menu-principal.png "Login Error")
 > **El menú principal de navegación del sistema**, cuenta con los siguientes elementos:  
 
 
@@ -77,25 +99,25 @@ Al momento de seleccionar  con un clic la lista desplegable se  cambia el idioma
     - Listado de Mcomm
     - Usuarios
 
-> Definiendo la esctructura de navegación del sistema
+> **Definiendo la esctructura de navegación del sistema**
 
 ----
 
 ## Menú Tiempo Real
 
 :::info
-   El Menú de tiempo real permite al usuario visualizar el estado de los sensores en tiempo real. el menú esta compuesto de los módulo **Tablas  ![tabla](../../static/img/iconos/table.svg "Table"), Tarjetas ![card](../../static/img/iconos/id-card.svg "tarjeta"), Grupos ![Grupos](../../static/img/iconos/list.svg "Table"), Gráfico de tiempo real ![grafico](../../static/img/iconos/chart-line.svg "Table")**
+   El Menú de tiempo real permite al usuario visualizar el estado de los sensores en **tiempo real**. el menú esta compuesto de los módulo **Tablas  ![tabla](../../static/img/iconos/table.svg "Table"), Tarjetas ![card](../../static/img/iconos/id-card.svg "tarjeta"), Grupos ![Grupos](../../static/img/iconos/list.svg "Table"), Gráfico de tiempo real ![grafico](../../static/img/iconos/chart-line.svg "Table")**
 :::
 ---
 ## Módulo Tablas  ![table](../../static/img/iconos/table.svg "Table")
 
 ![tabla](../../static/img/iconos/g-icon-table.png "Tabla")
 
-> Este módulo presenta una tabla de los sensores en tiempo real, los campos representados  son los siguientes **`Sensor, #, Name, Type, Value, Unit, Min value, Max Value`**, que describen los datos que estan transmitiendo en  los sensores Mcomm.
+> Este módulo presenta una tabla con el registro de los sensores en tiempo real, los campos representados  son los siguientes: **`Sensor, #, Name, Type, Value, Unit, Min value, Max Value`**, que describen los datos que estan transmitiendo en  los sensores Mcomm.
 
-![tiempo real](../../static/img/dashboard/tiempo-real/admin-tiempo-real-2.png "Dashboard Tabla")
+![tiempo real](../../static/img/dashboard/admin-user/tiempo-real/admin-tiempo-real-2.png "Dashboard Tabla")
 
-> Listado de los sensores que estan transmitiendo información en tiempo real. si el usuario selecciona con un clic un sensor de la lista, esta acción hace que se redirecione a la vista del módulo del grafico de tiempo real, mostrado el comportamiento del sensor en una gráfica.
+> Listado de los sensores que estan transmitiendo información en tiempo real. **`si el usuario selecciona con un clic un sensor de la lista, esta acción hace que se redirecione a la vista del módulo del gráfico de tiempo real, mostrado el comportamiento del sensor en una gráfica`**.
 
 ---
 
@@ -105,7 +127,7 @@ Al momento de seleccionar  con un clic la lista desplegable se  cambia el idioma
 
 > Este módulo presenta un Card de los sensores en tiempo real, la información que describe es la siguiente **`Sensor, Nombre,  Value, Unit`.**
 
-![tiempo real](../../static/img/dashboard/tiempo-real/admin-tiempo-real-3.png "Dashboard tiempo Tarjeta")
+![tiempo real](../../static/img/dashboard/admin-user/tiempo-real/admin-tiempo-real-3.png "Dashboard tiempo Tarjeta")
 > Esta vista **agrupa la informacion de los sensores, a tráves componentes de tipo card, mostrando los datos de los sensores con información maś resumida**.    
 
 ---
@@ -114,7 +136,7 @@ Al momento de seleccionar  con un clic la lista desplegable se  cambia el idioma
 ![card](../../static/img/iconos/g-icon-grupos.png "grupos")
 > Este módulo representa la agrupación de los sensores por tipos de **grupos** como se describe en la imagen **`Totalizadores de Producción,Transmisores de flujos,  Transmisores de nivel, Transmisores de ORP, Transmisores de Turbidez, Transmisores de pH, Transmisores de Conductividad.`**
 
-![tiempo real](../../static/img/dashboard/tiempo-real/admin-tiempo-real-4.png "Dashboard Grupos")
+![tiempo real](../../static/img/dashboard/admin-user/tiempo-real/admin-tiempo-real-4.png "Dashboard Grupos")
 > Lista desplegable para seleccionar el módulo de comunicación   
 
 ---
@@ -124,7 +146,7 @@ Al momento de seleccionar  con un clic la lista desplegable se  cambia el idioma
 > En este módulo el usuario  podrá ver los datos graficados del sensor, ir al gráfico histórico, descargar una imágen o exportar la data.
 
 
-![tiempo real](../../static/img/dashboard/tiempo-real/admin-tiempo-real-6.png "Dashboard Tiempo real")
+![tiempo real](../../static/img/dashboard/admin-user/tiempo-real/admin-tiempo-real-6.png "Dashboard Tiempo real")
 
 :::info[Gráfico de tiempo real]
 En este módulo se muestra la gráfica en tiempo real del sensor, y los elementos destacables de la interfaz se mencionan a continuación, 1) **Botón ir a histórico**, que redirecciona a la vista Histórico,  2) **lista de sensores**, el usurio podrá seleccionar el sensor que quiera analizar, 3) **El tiempo real** de la lectura del sensor, con las opciones de exportar la data y descargar la imagen del gráfico, 4) **representación visual del grafico con sus metrícas**, 5) **Card con la información del sensor su unidad de medida y el valor producido**.
@@ -135,14 +157,14 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 > En este módulo el usuario podrá observar el comportamiento del sensor, y obtener los datos graficados en tiempo real o historicamente a tráves de un rango de fecha seleccionado, posteriormente tendrá la opción de exportar la data en difentes tipos de formatos **`("Excel", "CSV","TXT","JSON")`** haciendo clic en el ícono ![grupos](../../static/img/iconos/export.svg "Chart Line") y por útimo podrá descargar la imagen del gráfico en tiempo real o el histórico  haciendo clic al ícono ![grupos](../../static/img/iconos/download.svg "Chart Line") 
 
 
-![Historico](../../static/img/dashboard/historico/admin-historico-1.png "Dashboard historico")
+![Historico](../../static/img/dashboard/admin-user/historico/admin-historico-1.png "Dashboard historico")
 > Interfaz del módulo Gráfico histórico
 ---
-![Historico](../../static/img/dashboard/historico/admin-historico-2.png "Dashboard historico")
+![Historico](../../static/img/dashboard/admin-user/historico/admin-historico-2.png "Dashboard historico")
 > Elementos del módulo Gráfico histórico **`1) Lista de los sensores, 2) selección de la fecha en rango desde ahora hasta histórico, 3) Bontón par ir al módulo tiempo real, 4) Botones para descargar imagen y exportar los datos, 5) Información gráfica del sensor`** 
 ---
 
-![Historico](../../static/img/dashboard/historico/admin-historico-3.png "Dashboard historico")
+![Historico](../../static/img/dashboard/admin-user/historico/admin-historico-3.png "Dashboard historico")
 >Interfaz del módulo tiempo real.
 ---
 
@@ -151,13 +173,13 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 ### Alarmas tiempo real
 > El módulo de **Alarmas**  tiene como función principal la visualización en tiempo real de las alarmas provenientes de diversos sensores, llevando un registro histórico de las mismas.
 
-![Alarmas y mensajes](../../static/img/dashboard/alarmas-mensajes/admin-alarma-mensaje-1.png "Dashboard Alarmas y mensajes")
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-1.png "Dashboard Alarmas y mensajes")
 
 > **Esa tabla permitiría tener un registro histórico de todas las alarmas ocurridas, conocer cuáles están aún activas y tener la información necesaria para que un operador pueda evaluar y atender la situación que la provocó.**
 
 
 ---
-![Alarmas y mensajes](../../static/img/dashboard/alarmas-mensajes/admin-alarma-mensaje-2.png "Dashboard Alarmas y mensajes")
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-2.png "Dashboard Alarmas y mensajes")
 
 :::note Nota
 
@@ -177,11 +199,11 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 
 > El módulo de exportar alarmas  tiene como función principal de configurar y exportar la data de las alarmas.
 
-![Alarmas y mensajes](../../static/img/dashboard/alarmas-mensajes/admin-alarma-mensaje-3.png "Dashboard Alarmas y mensajes")
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-3.png "Dashboard Alarmas y mensajes")
 > Interfaz del módulo de exportar alrmas
 ---
 
-![Alarmas y mensajes](../../static/img/dashboard/alarmas-mensajes/admin-alarma-mensaje-6.png "Dashboard Alarmas y mensajes")
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-6.png "Dashboard Alarmas y mensajes")
 
 > Elementos principales del módulo exportar data de las alarmas.
 
@@ -194,12 +216,13 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 :::
 ----
 
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-6.png "Dashboard Alarmas y mensajes")
 
 ### Mensajes tiempo real
 
 > El módulo de **Mensajes**  tiene como función principal la visualización en tiempo real de los mensajes provenientes de los sensores, llevando un registro histórico de las mismas.
 
-![Alarmas y mensajes](../../static/img/dashboard/alarmas-mensajes/admin-alarma-mensaje-4.png "Dashboard Alarmas y mensajes")
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-4.png "Dashboard Alarmas y mensajes")
 
 :::note Nota
 
@@ -214,8 +237,18 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 :::
 
 ---
-![Alarmas y mensajes](../../static/img/dashboard/alarmas-mensajes/admin-alarma-mensaje-5.png "Dashboard Alarmas y mensajes")
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-5.png "Dashboard Alarmas y mensajes")
 > Elementos principales del módulo exportar data de las alarmas.
+
+---
+
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-7.png "Dashboard Alarmas y mensajes")
+> Elementos principales del módulo exportar data de las alarmas.
+
+---
+
+![Alarmas y mensajes](../../static/img/dashboard/admin-user/alarmas-mensajes/admin-alarma-mensaje-8.png "Dashboard Alarmas y mensajes")
+> Elementos principales del módulo exportar data de las alarmas.al seleccionar algunos de los botones para realizar la exportación del archivo del reporte historico de las alarma muestra el siguiente cuadro de dialogo para guardar la información en el equipo.
 
 :::info[]
 1. Botón de selección de **fecha**, lista desplegable **desde ahora, Histórico**.
@@ -227,64 +260,102 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 
 
 ## Módulo Normalización
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-1.png "Dashboard Normalización")
-> Este módulo comprenderá los siguientes elementos: Osmosis Inversa, Configuración Masiva e Importación de Pruebas.
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-1.png "Dashboard Normalización")
+> Este módulo comprenderá los siguientes elementos: Ósmosis Inversa, Configuración Masiva e Importación de Pruebas.
 
 ---
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-2.png "Dashboard Normalización")
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-2.png "Dashboard Normalización")
 
 :::tip
-**Módulo de Osmosis Inversa**, en la imagenes se puede apreciar los elementos resaltantes que se describen a continuación: 1) **Tag del proceso**, 2) **Fecha de reinicio**, 3)**Fecha normalizada**,4)**datos**, 5) **Botones de configuración, normalización y Reporte**
+**Módulo de Ósmosis Inversa**, en la imagenes se puede apreciar los elementos resaltantes que se describen a continuación: 1) **Tag del proceso**, 2) **Fecha de reinicio**, 3)**Fecha normalizada**,4)**datos**, 5) **Botones de configuración, normalización y Reporte**
 :::
 
 ---
-### Configuración de proceso de osmosis inversa
-> Este módulo permite configurar los parámetros de la osmosis inversa.
+### Configuración de proceso de Ósmosis inversa
+> Este módulo permite configurar los parámetros de la ósmosis inversa.
 
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-configuracion.png "Dashboard Normalización")
-> List
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-configuracion.png "Dashboard Normalización")
 
-### Creación de proceso e osmosis
+> Listado de procesos OI para ESSTIA_COL
+
+
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-3-1.png "Dashboard Normalización")
+
+>Elementos visuales de la interfaz del módulo ósmosis Inversa:
+**Botón regresar** direcciona al usuario a la vista listado de procesos de ósmosis
+![card](../../static/img/iconos/button-arrow-left-blue.svg )
+**Botón buscar Filtrar**: habilita una ventana para filtrar los datos del proceso de ósmosis; 
+![card](../../static/img/iconos/button-seach.svg )
+**Botón Refrescar**: Limpia los datos de la tabla y los carga de nuevo; 
+![card](../../static/img/iconos/button-refresh.svg )
+**Botón Archivar**: Guarda o desabilita el registro de la tabla; 
+![card](../../static/img/iconos/button-archive.svg )
+**Botón Nueva Ósmosis**: habilita un formulario para registrar los datos de un nuevo proceso de ósmosis; 
+![card](../../static/img/iconos/button-new-osmosis.svg )
+
+---
+
+
+### Creación de nuevo proceso de Ósmosis
 > Este módulo muestra un formulario para el registro de un nuevo proceso de osmosis inversa.
 ---
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-8.png "Dashboard Normalización")
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-8.png "Dashboard Normalización")
+> Formulario Para crear proceso de ósmosis
+
+---
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-4.png "Dashboard Normalización")
+> Como se puede apreciar en la imágen el formulario tiene los siguientes campos de registros Mcomm seleccionado: nombre del sensor, tag, nombre, varios botones en donde se seleccionara los diferentes procesos que se van a registrar, al hacer clic se habilita un siderbar con la inpfrmación del proceso a registrar. ejempño **Permeate Flow** 
+
+
+
+## Filtrar Ósmosis
+![card](../../static/img/iconos/button-seach.svg "grafico tiempo real")
+> Con este botón filtramos El listado del proceso de ósmosis 
+
+
+## Formulario datos filtar Ósmosis
+> Con este formulario modal, el usuario podra realizar la busqueda en la base de datos la información de los datos del osmosis, en la imagen se puede apreciar un campo tipo lista desplegable para seleccionar la etiqueta de ósmosis, dos campos de fecha inicial y final para filtrar por el rango de selección de fecha, y por último dos botones para realizar la accion de busqueda.
+
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-3-2.png "Dashboard Normalización")
+> Listado de procesos OI para ESSTIA_COL
+
+
+
+---
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-4.png "Dashboard Normalización")
+> List
+---
+
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-5.png "Dashboard Normalización")
+> List
+---
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-6.png "Dashboard Normalización")
 > List
 
 ---
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-4.png "Dashboard Normalización")
-> List
----
-
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-5.png "Dashboard Normalización")
-> List
----
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-6.png "Dashboard Normalización")
-> List
-
----
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-7.png "Dashboard Normalización")
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-7.png "Dashboard Normalización")
 > List
 
 ---
 
 
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-9.png "Dashboard Normalización")
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-9.png "Dashboard Normalización")
 > List
 
 ---
-![normalización](../../static/img/dashboard/normalizacion/admin-normalizacion-10.png "Dashboard Normalización")
+![normalización](../../static/img/dashboard/admin-user/normalizacion/admin-normalizacion-10.png "Dashboard Normalización")
 > List
 
 ## Módulo Conexion
-![conexion](../../static/img/dashboard/conexion/admin-conexion-1.png "Dashboard conexion")
+![conexion](../../static/img/dashboard/admin-user/conexion/admin-conexion-1.png "Dashboard conexion")
 > List
 ---
-![conexion](../../static/img/dashboard/conexion/admin-conexion-2.png "Dashboard conexion")
+![conexion](../../static/img/dashboard/admin-user/conexion/admin-conexion-2.png "Dashboard conexion")
 > List
 ---
 
 ## Módulo Reportes
-![reportes](../../static/img/dashboard/reportes/admin-reportes-1.png "Dashboard reportes")
+![reportes](../../static/img/dashboard/admin-user/reportes/admin-reportes-1.png "Dashboard reportes")
 > Este módulo permite al usuario Generar el reporte diario de los procesos del Mcomm. a traves de un formulario se puede llenar dicho, tambien se puede editar, archivar y exportar en formato pdf. 
 
 ---
@@ -292,10 +363,10 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 ## Listado de reportes
 > Este módulo muestra al usuario los registros de los reportes en una tabla, la cuál tiene los siguientes campos: **Nombre, Asunto, Tipos de reportes, Modalidad, Acciones** este campo de acciones tiene a su vez los siguientes elementos: **ver,editar, exportar PDF , archivar**.
 ---
-![reportes](../../static/img/dashboard/reportes/admin-reportes-2.png "Dashboard reportes")
+![reportes](../../static/img/dashboard/admin-user/reportes/admin-reportes-2.png "Dashboard reportes")
 > `Interfaz gráfica del módulo Lista de Reportes`
 ---
-![reportes](../../static/img/dashboard/reportes/admin-reportes-4.png "Dashboard reportes")
+![reportes](../../static/img/dashboard/admin-user/reportes/admin-reportes-4.png "Dashboard reportes")
 :::tip[Elementos principales de la interfaz gráfica]
 **Módulo lista de reportes**, en la imagenes se puede apreciar los elementos resaltantes que se describen a continuación: 1) **Top bar de botones que realizan las siguientes acciones:** `Buscar, actualizar archivar y nuevo reporte`, 2) **Fecha de reinicio**, 3)**Fecha normalizada**,4)**datos**, 5) **Botones de configuración, normalización y Reporte**
 :::
@@ -305,9 +376,9 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 ### Crear Reporte
 > Este módulo presenta un formulario en donde el usuario podrá crear un nuevo reporte.
 
-![reportes](../../static/img/dashboard/reportes/admin-reportes-5.png "Dashboard reportes")
+![reportes](../../static/img/dashboard/admin-user/reportes/admin-reportes-5.png "Dashboard reportes")
 
-![reportes](../../static/img/dashboard/reportes/admin-reportes-6.png "Dashboard reportes")
+![reportes](../../static/img/dashboard/admin-user/reportes/admin-reportes-6.png "Dashboard reportes")
 > **`Culminado el llenado del formulario el usuario podra realizar las acciones de guardar o enviar, cancelar el formulario, reiniciar los campos del formulario limpiando los datos y finalmente salir del módulo`**.
 
 ---
@@ -315,7 +386,7 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 ### Editar Reporte
 > Este módulo presenta un formulario en donde el usuario podrá editar los datos del reporte creado o registrado.
 
-![reportes](../../static/img/dashboard/reportes/admin-reportes-7.png "Dashboard reportes")
+![reportes](../../static/img/dashboard/admin-user/reportes/admin-reportes-7.png "Dashboard reportes")
 
 # Modulo Términos y condiciones
 
@@ -378,13 +449,13 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 ## Configuraciones ![card](../../static/img/iconos/menu-config.svg "tarjeta")
 > Para acceder a este módulo el **usuario debe seleccionar** con un clic el boton `config`, Este módulo muestra al usuario **las configuraciones del sistema como la información general, los datos del Mcomm actual y sus valores, los datos de la cuenta de usuario del sistema**.
 ---
-![configuraciones](../../static/img/dashboard/configuraciones/admin-configuracion-1.png)
+![configuraciones](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-1.png)
 
 ## Módulo de Información General del Sistema ![card](../../static/img/iconos/id-card.svg "tarjeta")
 
 > **Este módulo muestra al usuario la información general del sistema**
 ---
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-2.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-2.png "Dashboard configuración")
 > `Información General del sistema`,  **Ventana, Versión, Hash, Hotname, hora local, Zona horaria.**
 ---
 
@@ -392,7 +463,7 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 
 > Este módulo muestra al usuario la información del sensor Mcomm, una representación de los datos en una tabla auxiliar, con información del nombre **Etiqueta o nombre corto**, **Nombre largo del sensor** y la **Unidad de medida.**
 ---
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-3.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-3.png "Dashboard configuración")
 > `Interfaz gráfica del módulo de comunicación`, cuenta con los botones **Abrir enlace** y **Mapa de google**, el botón **Abrir enlace** abre una ventana con la información del sensor y el botón **Mapa de google** abre una ventana con la ubicación fisíca del mcomm.
 
 ---
@@ -401,7 +472,7 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 
 >Para acceder al URL el usuario debe seleccianar con un clic el botón  ![boton](../../static/img/iconos/button-abrir.svg "Boton")  [https://us2.m2web.talk2m.com/islas_colombia/Esenttia/#](https://us2.m2web.talk2m.com/islas_colombia/Esenttia/#), esta area solo ingresa el administrador del sistema.
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-3-1.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-3-1.png "Dashboard configuración")
 
 ---
 
@@ -410,81 +481,81 @@ En este módulo se muestra la gráfica en tiempo real del sensor, y los elemento
 > Para acceder al **URL** el usuario debe seleccianara con un clic el botón  ![boton](../../static/img/iconos/button-mapa.svg "Boton"), `despúes Atraves de la ubicagión GPS, se muestra el mapa con las coordenadas y ubicación fisíca de la planta donde se encuentra instalado el flexy mcomm`. **en este ejemplo de la imagen podemos ver la ubicación de la Planta Mamonal, Petroquimica Colombiana - ESENTTIA_CO, ubicada en el país de Colombia**.
 
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-3-2.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-3-2.png "Dashboard configuración")
 
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-4.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-4.png "Dashboard configuración")
 
 ---
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-4-1.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-4-1.png "Dashboard configuración")
 
 ---
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-4-2.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-4-2.png "Dashboard configuración")
 
 ---
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-4-3.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-4-3.png "Dashboard configuración")
 
 ---
 
 ## Listado de Usuarios
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5.png "Dashboard configuración")
 
 ---
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5-0.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5-0.png "Dashboard configuración")
 
 ---
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5-0-1.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5-0-1.png "Dashboard configuración")
 
 
 ---
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5-0-2.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5-0-2.png "Dashboard configuración")
 
 ---
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5-1.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5-1.png "Dashboard configuración")
 
 ---
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5-2.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5-2.png "Dashboard configuración")
 
 ---
 
 ## Listado de Mcomm
 > Este módulo permite  al usuario gestionar el listado de los Mcomm, la información se muestra en la tabla que contiene la siguiente descripción **Name nombre del mcomm, tipo, fecha de creación, status, aciones**
 
-![reportes](../../static/img/dashboard/configuraciones/admin-configuracion-5-3.png "Dashboard configuración")
+![reportes](../../static/img/dashboard/admin-user/configuraciones/admin-configuracion-5-3.png "Dashboard configuración")
 
 ----
 

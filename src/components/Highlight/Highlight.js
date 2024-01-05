@@ -8,10 +8,10 @@ export default function Highlight({children, color}) {
         borderRadius: '20px',
         fontFamily:'Roboto',
         color: '#fff',
-        padding: '0.4rem',
+        padding: '.5rem',
         textTransform: 'uppercase',
         fontSize: '0.9rem',
-        fontWeight: 'Bold',
+        fontWeight: 'Bold',        
       }}>
       {children}
     </span>
