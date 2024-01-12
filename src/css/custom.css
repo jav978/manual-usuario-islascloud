@@ -33,7 +33,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.coloBadge{
+.colorBadge{
   background-color: #666666;
   padding: 10px;
   border-radius: 50px;
@@ -63,6 +63,7 @@
   font-size: 1.4rem;
   transition: background var(--ifm-transition-fast);
 }
+
 .zoom {
   overflow: hidden;
   display: inline-block;
@@ -91,4 +92,24 @@ html[data-theme='dark'] .navbar__github {
 
 .shadow-sm{
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+/* 
+.navbar__title .text--truncate {
+  font-family:'Handel Gothic D','Roboto',sans-serif !important;
+  font-size: 1.6rem;
+  
+} */
+.markdown :not(em) > img[src$=".png"],
+.markdown :not(em) > img[src$=".jpg"] {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* transition: transform 0.3s; */
+  /* transition: border-color 0.3s; */
+ 
+}
+
+.markdown :not(em) > img[src$=".png"]:hover,
+.markdown :not(em) > img[src$=".jpg"]:hover {
+   transform: scale(1.05); 
+  box-shadow: 0 0 5px 2px #7540bd;
 }

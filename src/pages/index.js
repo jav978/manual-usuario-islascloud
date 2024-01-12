@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <Layout
       title={`Manual usuario ${siteConfig.title} version 1.0.0`}
-      description="Manual de usuario del sistema Islas Cloud <head />">
+      description="Manual de usuario del sistema IslasCloud <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

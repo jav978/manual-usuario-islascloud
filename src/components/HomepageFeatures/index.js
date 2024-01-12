@@ -89,7 +89,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <h1 className="hero__title" style={{textAlign: 'center', margin: '10px'}}>Usuarios del </h1>
+        <h1 className="hero__title" style={{textAlign: 'center', margin: '10px'}}>Usuarios del Sistema</h1>
 
         <div className="row">
           {FeatureList.map((props, idx) => (
