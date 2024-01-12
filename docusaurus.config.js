@@ -114,7 +114,7 @@ const config = {
                         type: "docSidebar",
                         sidebarId: "tutorialSidebar",
                         position: "right",
-                        label: "Docs"
+                        label: "Docs 📚"
                     }
                 ]
             },
@@ -122,7 +122,7 @@ const config = {
                 style: "dark",
                 links: [
                     {
-                        title: "Docs",
+                        title: "Docs 📚 ",
                         items: [
                             {
                                 label: "Introducción",
