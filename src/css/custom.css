@@ -3,6 +3,11 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+
+ @import url(https://db.onlinewebfonts.com/c/6bce08c7578b064d528ce59eea3aed9c?family=Handel+Gothic+D+Light);
+ @import url(https://db.onlinewebfonts.com/c/aa6c88752f6c9aa5e716e427c5d07694?family=Handel+Gothic+D+Medium);
+ @import url(https://db.onlinewebfonts.com/c/73366e57ebf96c59a9a5af2f1f12b782?family=Handel+Gothic+D+Bold);
+ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -62,12 +67,26 @@
   border-radius: 50%;
   font-size: 1.4rem;
   transition: background var(--ifm-transition-fast);
+  -webkit-transition: background var(--ifm-transition-fast);
+  -moz-transition: background var(--ifm-transition-fast);
+  -ms-transition: background var(--ifm-transition-fast);
+  -o-transition: background var(--ifm-transition-fast);
 }
 
 .zoom {
   overflow: hidden;
   display: inline-block;
 }
+
+.navbar__title {
+  flex: 1 1 auto;
+}
+
+.text--truncate { 
+  font-family: Handel Gothic D,sans-serif;
+  font-size: 1.5rem;
+}
+
 
 .zoom img {
   transition: transform 0.3s ease-in-out;
@@ -88,7 +107,23 @@ html[data-theme='dark'] .navbar__github {
   background: var(--ifm-color-emphasis-200);
 }
 
+.title{
+  
+  font-weight: medium !important;
+  font-family:'Handel Gothic D';
+  font-size: 2.8rem;
+}
 
+
+.ptitle{  
+  font-weight: medium !important;
+  font-family:'Handel Gothic D';
+  font-size: 1.5rem;
+}
+
+.spantitle{
+  font-weight: bold !important;
+}
 
 .shadow-sm{
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -96,7 +131,7 @@ html[data-theme='dark'] .navbar__github {
 /* 
 .navbar__title .text--truncate {
   font-family:'Handel Gothic D','Roboto',sans-serif !important;
-  font-size: 1.6rem;
+  
   
 } */
 .markdown :not(em) > img[src$=".png"],
@@ -111,5 +146,5 @@ html[data-theme='dark'] .navbar__github {
 .markdown :not(em) > img[src$=".png"]:hover,
 .markdown :not(em) > img[src$=".jpg"]:hover {
    transform: scale(1.05); 
-  box-shadow: 0 0 5px 2px #7540bd;
+  box-shadow: 0 0 5px 2px #527ef8;
 }

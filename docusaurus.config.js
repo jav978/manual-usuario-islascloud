@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "IslasCloud",
-    tagline: "Manual de Usuario del Sistema IslasCloud",
+    tagline: "Manual de Usuario",
     favicon: "img/favicon.ico",
 
     // Set the production url of your site here
@@ -102,70 +102,73 @@ const config = {
               },  
            
             navbar: {
+            //    title: "IslasCloud",
                 title: "IslasCloud",
-                style: "dark",
+                //style: "dark",
                 hideOnScroll:false,
                 logo: {
                     alt: "IslasCloud mobile",
-                    src: "img/IslasCloud_Logo_icono_color.png"
+                    src: "img/IslasCloud_Logo_icono_color.png",
+                    // width:"160rem",
+                    // height:"180rem"
                 },
                 items: [
-                    {
-                        type: "docSidebar",
-                        sidebarId: "tutorialSidebar",
-                        position: "right",
-                        label: "Docs 📚"
-                    }
+                    // {
+                    //     type: "docSidebar",
+                    //     sidebarId: "tutorialSidebar",
+                    //     position: "right",
+                    //     label: "Introducción "
+                    // }
                 ]
             },
             footer: {
                 style: "dark",
-                links: [
-                    {
-                        title: "Docs 📚 ",
-                        items: [
-                            {
-                                label: "Introducción",
-                                to: "/docs/intro",
-                            }
-                        ]
-                     },
-                    // {
-                    //     title: "Community",
-                    //     items: [
-                    //         {
-                    //             label: "Stack Overflow",
-                    //             href: "https://stackoverflow.com/questions/tagged/docusaurus"
-                    //         },
-                    //         {
-                    //             label: "Discord",
-                    //             href: "https://discordapp.com/invite/docusaurus"
-                    //         },
-                    //         {
-                    //             label: "Twitter",
-                    //             href: "https://twitter.com/docusaurus"
-                    //         }
-                    //     ]
-                    // },
-                    // {
-                    //     title: "More",
-                    //     items: [
-                    //         {
-                    //             label: "Blog",
-                    //             to: "/blog"
-                    //         },
-                    //         {
-                    //             label: "GitHub",
-                    //             href: "https://github.com/facebook/docusaurus"
-                    //         }
-                    //     ]
-                    // }
-                ],
+                // links: [
+                //     {
+                //         title: "Docs 📚 ",
+                //         items: [
+                //             {
+                //                 label: "Documentación",
+                //                 to: "/docs/intro",
+                //             }
+                //         ]
+                //      },
+                //     // {
+                //     //     title: "Community",
+                //     //     items: [
+                //     //         {
+                //     //             label: "Stack Overflow",
+                //     //             href: "https://stackoverflow.com/questions/tagged/docusaurus"
+                //     //         },
+                //     //         {
+                //     //             label: "Discord",
+                //     //             href: "https://discordapp.com/invite/docusaurus"
+                //     //         },
+                //     //         {
+                //     //             label: "Twitter",
+                //     //             href: "https://twitter.com/docusaurus"
+                //     //         }
+                //     //     ]
+                //     // },
+                //     // {
+                //     //     title: "More",
+                //     //     items: [
+                //     //         {
+                //     //             label: "Blog",
+                //     //             to: "/blog"
+                //     //         },
+                //     //         {
+                //     //             label: "GitHub",
+                //     //             href: "https://github.com/facebook/docusaurus"
+                //     //         }
+                //     //     ]
+                //     // }
+                // ],
                 logo: {
                     alt: "IslasCloud mobile",
-                    src: "img/IslasCloud_Logo_icono_color.png",
-                    height: "32px",
-                    width: "48px"
+                    src: "img/iconos/Destralogotipoblanco.png",
+                    height: "64px",
+                    width: "80px"
                 },
 
                 copyright: `By DESTRA ©

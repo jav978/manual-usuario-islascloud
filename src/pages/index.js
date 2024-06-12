@@ -12,19 +12,21 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-    
+      <div className="container">    
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          {/* {siteConfig.title} */}
+          <h1 className="title">Manual de <span className="spantitle">Usuario</span></h1>
+          <h3>versión 2.18.72</h3>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline} <span>versión 2.1.8</span></p>
+        {/* <p className="hero__subtitle ptitle">{siteConfig.tagline}</p> */}
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Inicio 🏠
+            to="/docs/category/usuarios-del-sistema">
+            Ingresar 🏠
           </Link>
         </div>
+        
       </div>
     </header>
   );
@@ -38,7 +40,7 @@ export default function Home() {
       description="Manual de usuario del sistema IslasCloud <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <HomepageFeatures   />
       </main>
     </Layout>
   );
