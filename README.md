@@ -46,3 +46,12 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 user-manual.destraislas.com
 
 tech-manual.destraislas.com
+
+
+# Liberia para generagr pdf 
+
+https://islascloudusermanual.netlify.app/docs/intro
+
+npx docusaurus-prince-pdf -u https://islascloudusermanual.netlify.app/docs/intro
+
+fuente https://github.com/signcl/docusaurus-prince-pdf

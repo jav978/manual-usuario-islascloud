@@ -1,0 +1,4 @@
+https://islascloudusermanual.netlify.app/docs/guia
+https://islascloudusermanual.netlify.app/docs/login
+https://islascloudusermanual.netlify.app/docs/category/usuarios-del-sistema
+https://islascloudusermanual.netlify.app/docs/usuarios/user_admin
