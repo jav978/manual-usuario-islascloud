@@ -28,10 +28,9 @@ const config = {
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     markdown: {
-        mermaid: true,
-      },
-      themes: ['@docusaurus/theme-mermaid'],  
-   
+        mermaid: true
+    },
+    themes: ["@docusaurus/theme-mermaid"],
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -42,7 +41,7 @@ const config = {
     },
     plugins: [
         require.resolve("@cmfcmf/docusaurus-search-local"),
-        require.resolve('docusaurus-plugin-image-zoom')
+        require.resolve("docusaurus-plugin-image-zoom")
     ],
     presets: [
         [
@@ -72,10 +71,11 @@ const config = {
 
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-        ({           // Replace with your project's social card
+        ({
+            // Replace with your project's social card
             mermaid: {
-                theme: {light: 'neutral', dark: 'forest'}
-              },
+                theme: { light: "neutral", dark: "forest" }
+            },
             // imageZoom: {
             //   // CSS selector to apply the plugin to, defaults to '.markdown img'
             //   selector: '.markdown img',
@@ -88,27 +88,28 @@ const config = {
             //     container: '#zoom-container',
             //     template: '#zoom-template',
             //   },
-            // },            
+            // },
             zoom: {
                 // selector: '.markdown :not(em) > img',
-                selector: '.markdown :not(em) > img[src$=".png"], .markdown :not(em) > img[src$=".jpg"]',
+                selector:
+                    '.markdown :not(em) > img[src$=".png"], .markdown :not(em) > img[src$=".jpg"]',
                 background: {
-                  light: 'rgb(255, 255, 255)',
-                  dark: 'rgb(50, 50, 50)'
+                    light: "rgb(255, 255, 255)",
+                    dark: "rgb(50, 50, 50)"
                 },
                 config: {
-                  // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+                    // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
                 }
-              },  
-           
+            },
+
             navbar: {
-            //    title: "IslasCloud",
+                //    title: "IslasCloud",
                 title: "IslasCloud",
                 //style: "dark",
-                hideOnScroll:false,
+                hideOnScroll: false,
                 logo: {
                     alt: "IslasCloud mobile",
-                    src: "img/IslasCloud_Logo_icono_color.png",
+                    src: "img/IslasCloud_Logo_icono_color.png"
                     // width:"160rem",
                     // height:"180rem"
                 },
@@ -172,8 +173,8 @@ const config = {
                 },
 
                 copyright: `By DESTRA ©
-                version: 2.1.18
-                5cae7d6 
+                version: 2.18.72
+                9794e675 
                 ${new Date().getFullYear()}
                 Desarrollo de Soluciones en Tratamiento de Agua.`
             },
