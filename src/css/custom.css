@@ -52,7 +52,7 @@
 }
 
 
-/* Iconons */
+
 
 .navbar__icon {
   height: 2rem;
@@ -107,8 +107,7 @@ html[data-theme='dark'] .navbar__github {
   background: var(--ifm-color-emphasis-200);
 }
 
-.title{
-  
+.title{  
   font-weight: medium !important;
   font-family:'Handel Gothic D';
   font-size: 2.8rem;
@@ -123,6 +122,10 @@ html[data-theme='dark'] .navbar__github {
 
 .spantitle{
   font-weight: bold !important;
+  font-weight: medium !important;
+  font-family:'Handel Gothic D';
+   font-size: 1.1rem;
+
 }
 
 .shadow-sm{

@@ -32,9 +32,6 @@ const config = {
     },
     themes: ["@docusaurus/theme-mermaid"],
 
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: "en",
         locales: ["en"]
@@ -51,15 +48,13 @@ const config = {
             ({
                 docs: {
                     sidebarPath: "./sidebars.js",
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
+                
                     editUrl:
                         "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
+                   
                     editUrl:
                         "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
                 },
@@ -77,19 +72,7 @@ const config = {
             mermaid: {
                 theme: { light: "neutral", dark: "forest" }
             },
-            // imageZoom: {
-            //   // CSS selector to apply the plugin to, defaults to '.markdown img'
-            //   selector: '.markdown img',
-            //   // Optional medium-zoom options
-            //   // see: https://www.npmjs.com/package/medium-zoom#options
-            //   options: {
-            //     margin: 24,
-            //     background: '#BADA55',
-            //     scrollOffset: 0,
-            //     container: '#zoom-container',
-            //     template: '#zoom-template',
-            //   },
-            // },
+           
             zoom: {
                 // selector: '.markdown :not(em) > img',
                 selector:
@@ -124,53 +107,12 @@ const config = {
                 ]
             },
             footer: {
-                style: "dark",
-                // links: [
-                //     {
-                //         title: "Docs 📚 ",
-                //         items: [
-                //             {
-                //                 label: "Documentación",
-                //                 to: "/docs/intro",
-                //             }
-                //         ]
-                //      },
-                //     // {
-                //     //     title: "Community",
-                //     //     items: [
-                //     //         {
-                //     //             label: "Stack Overflow",
-                //     //             href: "https://stackoverflow.com/questions/tagged/docusaurus"
-                //     //         },
-                //     //         {
-                //     //             label: "Discord",
-                //     //             href: "https://discordapp.com/invite/docusaurus"
-                //     //         },
-                //     //         {
-                //     //             label: "Twitter",
-                //     //             href: "https://twitter.com/docusaurus"
-                //     //         }
-                //     //     ]
-                //     // },
-                //     // {
-                //     //     title: "More",
-                //     //     items: [
-                //     //         {
-                //     //             label: "Blog",
-                //     //             to: "/blog"
-                //     //         },
-                //     //         {
-                //     //             label: "GitHub",
-                //     //             href: "https://github.com/facebook/docusaurus"
-                //     //         }
-                //     //     ]
-                //     // }
-                // ],
+                style: "dark",                
                 logo: {
                     alt: "IslasCloud mobile",
                     src: "img/iconos/Destralogotipoblanco.png",
                     height: "64px",
-                    width: "80px"
+                    width: "100px"
                 },
 
                 copyright: `By DESTRA ©
