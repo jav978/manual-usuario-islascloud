@@ -4,9 +4,44 @@
  * work well for content-centric websites.
  */
 
- @import url(https://db.onlinewebfonts.com/c/6bce08c7578b064d528ce59eea3aed9c?family=Handel+Gothic+D+Light);
- @import url(https://db.onlinewebfonts.com/c/aa6c88752f6c9aa5e716e427c5d07694?family=Handel+Gothic+D+Medium);
- @import url(https://db.onlinewebfonts.com/c/73366e57ebf96c59a9a5af2f1f12b782?family=Handel+Gothic+D+Bold);
+
+
+@font-face {
+  font-family:'Handel Gothic D Light'; /* Nombre de la fuente */
+  src: url(/static/fonts/Handel-Gothic-D-Light/Handel-Gothic-D-Light.ttf) format('truetype'); /* Ruta y formato de la fuente */
+  font-weight: lighter; /* Peso de la fuente */
+  font-style: normal; /* Estilo de la fuente */
+}
+
+
+@font-face {
+  font-family:'Handel Gothic D Medium'; /* Nombre de la fuente */
+  src: url(/static/fonts/Handel-Gothic-D-Medium/Handel-Gothic-D-Medium.ttf) format('truetype'); /* Ruta y formato de la fuente */
+  font-weight:200; /* Peso de la fuente */
+  font-style: normal; /* Estilo de la fuente */
+}
+
+
+@font-face {
+  font-family:'Handel Gothic D Bold'; /* Nombre de la fuente */
+  src: url(/static/fonts/Handel-Gothic-D-Bold/Handel-Gothic-D-Bold.ttf) format('truetype'); /* Ruta y formato de la fuente */
+  font-weight: Bold; /* Peso de la fuente */
+  font-style: normal; /* Estilo de la fuente */
+}
+
+
+
+@font-face {
+  font-family:'Handel Gothic D Regular'; /* Nombre de la fuente */
+  src: url(/static/fonts/Handel-Gothic-D-Regular/Handel-Gothic-Regular.ttf) format('truetype'); /* Ruta y formato de la fuente */
+  font-weight: bold; /* Peso de la fuente */
+  font-style: normal; /* Estilo de la fuente */
+}
+
+
+
+
+
  
 @tailwind base;
 @tailwind components;
@@ -83,7 +118,7 @@
 }
 
 .text--truncate { 
-  font-family: Handel Gothic D,sans-serif;
+  font-family: Handel Gothic D Light,sans-serif;
   font-size: 1.5rem;
 }
 
@@ -109,22 +144,27 @@ html[data-theme='dark'] .navbar__github {
 
 .title{  
   font-weight: medium !important;
-  font-family:'Handel Gothic D';
+  font-family:'Handel Gothic D Bold';
   font-size: 2.8rem;
 }
 
 
 .ptitle{  
   font-weight: medium !important;
-  font-family:'Handel Gothic D';
+  font-family:'Handel Gothic D Bold';
   font-size: 1.5rem;
 }
 
 .spantitle{
-  font-weight: bold !important;
-  font-weight: medium !important;
-  font-family:'Handel Gothic D';
+  font-weight: lighter;
+  font-family:'Handel Gothic D Light';
    font-size: 1.1rem;
+
+}
+.spantitle-1{
+  font-weight: bold !important;
+  font-family:'Handel Gothic D bold';
+   font-size: 1.2rem;
 
 }
 

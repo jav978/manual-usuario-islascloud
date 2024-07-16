@@ -18,7 +18,7 @@ const FeatureList = [
   //   ),
   // },
   {
-    title: 'Fácil de entender',
+    title: 'Fácil de Usar',
     Svg: require('@site/static/img/undraw_engineering_team_a7n2.svg').default,
     description: (
       <>
@@ -31,7 +31,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_heatmap_uyye.svg').default,
     description: (
       <>
-        El manual de usuario  proporciona toda la información necesaria para que el usuario pueda utilizar el sistema de forma eficaz.
+        El manual de usuario  proporciona toda la información necesaria para que el usuario pueda utilizar el sistema de forma práctica.
       </>
     ),
   },
